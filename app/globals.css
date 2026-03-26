@@ -1,26 +1,40 @@
 @import "tailwindcss";
 
+/* 1. The Strategy: Tells Tailwind to use the .dark class on <html> */
+@custom-variant dark (&:where(.dark, .dark *));
+
 :root {
   --background: #ffffff;
-  --foreground: #171717;
+  --foreground: #09090b;
+  /* zinc-950 */
+  --accent: #2563eb;
+  /* blue-600 */
+}
+
+/* 2. Manual Dark Mode Override */
+.dark {
+  --background: #000000;
+  --foreground: #fafafa;
+  /* zinc-50 */
+  --accent: #3b82f6;
+  /* blue-500 */
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-accent: var(--accent);
+  --variant-dark: .dark &;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* 3. Global Base Styles */
+html {
+  scroll-behavior: smooth;
+  /* Important for Next.js 16 hydration/scroll matching */
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background: var(--background);
+  background-color: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
