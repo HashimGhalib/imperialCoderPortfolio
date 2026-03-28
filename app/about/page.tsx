@@ -53,11 +53,11 @@ export default function About() {
                         <div className="grid grid-cols-2 gap-4 pt-6">
                             <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
                                 <h4 className="font-bold text-blue-600">Engineering</h4>
-                                <p className="truncate w-64 text-sm text-zinc-500">Embedded Systems, VHDL, IoT</p>
+                                <p className="text-sm text-zinc-500">Embedded Systems, VHDL, IoT</p>
                             </div>
                             <div className="p-4 rounded-xl bg-zinc-50 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800">
                                 <h4 className="font-bold text-blue-600">Software</h4>
-                                <p className="truncate w-64 text-sm text-zinc-500">React, Next.js, Full-stack Dev</p>
+                                <p className="text-sm text-zinc-500">React, Next.js, Full-stack Dev</p>
                             </div>
                         </div>
                     </motion.div>
