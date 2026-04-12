@@ -27,7 +27,7 @@ export default function Hero() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="text-center px-6 max-w-2xl"
+                className="text-center px-6 max-w-4xl"
             >
                 <motion.p
                     variants={itemVariants}
