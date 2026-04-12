@@ -28,7 +28,7 @@ export default function Navbar() {
                 <motion.span
                     initial={{ opacity: 0, x: -20 }}
                     animate={{ opacity: 1, x: 0 }}
-                    className="font-bold text-xl tracking-tight cursor-pointer z-50"
+                    className="font-heading font-bold text-xl tracking-tight cursor-pointer z-50"
                 >
                     <Link href="/" onClick={() => setIsOpen(false)}>
                         ImperialCoder
@@ -42,7 +42,7 @@ export default function Navbar() {
                             <Link
                                 key={link.name}
                                 href={link.href}
-                                className="text-sm font-medium text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
+                                className="text-sm font-body font-medium text-zinc-600 dark:text-zinc-400 hover:text-blue-500 dark:hover:text-blue-400 transition-colors"
                             >
                                 {link.name}
                             </Link>
@@ -97,7 +97,7 @@ export default function Navbar() {
                                     key={link.name}
                                     href={link.href}
                                     onClick={() => setIsOpen(false)}
-                                    className="text-lg font-medium text-zinc-600 dark:text-zinc-400 px-2 py-1"
+                                    className="text-lg font-body font-medium text-zinc-600 dark:text-zinc-400 px-2 py-1"
                                 >
                                     {link.name}
                                 </Link>

@@ -31,21 +31,21 @@ export default function Hero() {
             >
                 <motion.p
                     variants={itemVariants}
-                    className="text-blue-500 font-medium tracking-widest uppercase text-sm mb-4"
+                    className="text-blue-500 font-body font-medium tracking-widest uppercase text-sm mb-4"
                 >
                     Software Developer
                 </motion.p>
 
                 <motion.h1
                     variants={itemVariants}
-                    className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-400"
+                    className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-400"
                 >
                     Designing Seamless Digital Experiences from Concept to Interface
                 </motion.h1>
 
                 <motion.p
                     variants={itemVariants}
-                    className="text-lg text-zinc-600 dark:text-zinc-400 mb-10 leading-relaxed"
+                    className="font-body text-lg text-zinc-600 dark:text-zinc-400 mb-10 leading-relaxed"
                 >
                     I craft responsive, user-centered frontends with modern frameworks, delivering fast, accessible, and visually engaging web applications.
                 </motion.p>
@@ -53,11 +53,11 @@ export default function Hero() {
                 <motion.div variants={itemVariants} className="flex gap-4 justify-center">
                     <a
                         href="#projects"
-                        className="px-8 py-3 rounded-full bg-blue-600 text-white font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/25"
+                        className="px-8 py-3 rounded-full bg-blue-600 text-white font-body font-medium hover:bg-blue-700 transition-all shadow-lg shadow-blue-500/25"
                     >
                         View Projects
                     </a>
-                    <button className="px-8 py-3 rounded-full border border-zinc-200 dark:border-zinc-800 font-medium hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all">
+                    <button className="px-8 py-3 rounded-full border border-zinc-200 dark:border-zinc-800 font-body font-medium hover:bg-zinc-50 dark:hover:bg-zinc-900 transition-all">
                         <Link href="/contact">
                             Contact Me
                         </Link>

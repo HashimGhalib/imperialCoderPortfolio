@@ -36,11 +36,11 @@ export default function GithubProjects() {
         fetchRepos()
     }, [])
 
-    if (error) return <div className="text-center py-10 text-red-500">Failed to load projects.</div>
+    if (error) return <div className="font-body text-center py-10 text-red-500">Failed to load projects.</div>
 
     return (
         <section id="projects" className="py-20 max-w-5xl mx-auto px-4">
-            <h2 className="text-4xl font-bold mb-10 tracking-tight">Featured Engineering <span className="text-blue-600">Projects</span></h2>
+            <h2 className="text-4xl font-heading font-bold mb-10 tracking-tight">Featured Engineering <span className="text-blue-600">Projects</span></h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
                 {loading ? (
@@ -58,8 +58,8 @@ export default function GithubProjects() {
                             whileHover={{ y: -10 }}
                             className="p-6 rounded-xl border border-zinc-200 dark:border-zinc-800 bg-white dark:bg-zinc-900/50 hover:shadow-xl transition-all"
                         >
-                            <h3 className="font-bold text-lg text-blue-600 dark:text-blue-400">{repo.name}</h3>
-                            <p className="text-sm text-zinc-500 dark:text-zinc-400 mt-2 line-clamp-2">
+                            <h3 className="font-body font-bold text-lg text-blue-600 dark:text-blue-400">{repo.name}</h3>
+                            <p className="text-sm font-body text-zinc-500 dark:text-zinc-400 mt-2 line-clamp-2">
                                 {repo.description || "No description provided."}
                             </p>
 
@@ -71,7 +71,7 @@ export default function GithubProjects() {
                                     href={repo.html_url}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    className="text-sm font-medium hover:underline text-zinc-900 dark:text-white"
+                                    className="text-sm font-body font-medium hover:underline text-zinc-900 dark:text-white"
                                 >
                                     Source <ArrowRight size={16} className="inline-block ml-1" />
                                 </a>
@@ -86,7 +86,7 @@ export default function GithubProjects() {
                 <motion.a
                     href="/projects"
                     whileHover="hover"
-                    className="group relative flex items-center gap-2 px-8 py-4 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-black font-semibold transition-all shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-black/20"
+                    className="group relative flex items-center gap-2 px-8 py-4 rounded-full bg-zinc-900 dark:bg-white text-white dark:text-black font-body font-semibold transition-all shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-black/20"
                 >
                     <span>View All Projects</span>
 

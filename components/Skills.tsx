@@ -20,10 +20,10 @@ export default function Skills() {
     return (
         <section id="skills" className="py-24 px-6 max-w-5xl mx-auto">
             <div className="text-center mb-16">
-                <h2 className="text-4xl font-bold tracking-tight text-zinc-900 dark:text-white">
+                <h2 className="text-4xl font-heading font-bold tracking-tight text-zinc-900 dark:text-white">
                     Technical <span className="text-blue-600">Stack</span>
                 </h2>
-                <p className="mt-4 text-zinc-500 dark:text-zinc-400">
+                <p className="mt-4 font-body text-zinc-500 dark:text-zinc-400">
                     A broad overview of the technologies I use to build scalable software.
                 </p>
             </div>
@@ -38,14 +38,14 @@ export default function Skills() {
                         transition={{ delay: idx * 0.1 }}
                         className="p-6 rounded-2xl border border-zinc-200 dark:border-zinc-800 bg-zinc-50/50 dark:bg-zinc-900/30 backdrop-blur-sm"
                     >
-                        <h3 className="text-lg font-bold mb-6 text-blue-600 dark:text-blue-400">
+                        <h3 className="text-lg font-body font-bold mb-6 text-blue-600 dark:text-blue-400">
                             {category.title}
                         </h3>
                         <div className="flex flex-wrap gap-3">
                             {category.items.map((skill) => (
                                 <span
                                     key={skill}
-                                    className="px-3 py-1.5 text-sm font-medium rounded-lg 
+                                    className="px-3 py-1.5 text-sm font-body font-medium rounded-lg 
                              bg-white dark:bg-zinc-800 
                              text-zinc-700 dark:text-zinc-300 
                              border border-zinc-200 dark:border-zinc-700 

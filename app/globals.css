@@ -24,6 +24,10 @@
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-accent: var(--accent);
+
+  --font-heading: var(--font-space-grotesk);
+  --font-body: var(--font-host-grotesk);
+
   --variant-dark: .dark &;
 }
 
