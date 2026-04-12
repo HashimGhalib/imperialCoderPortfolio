@@ -40,7 +40,7 @@ export default function Hero() {
                     variants={itemVariants}
                     className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-400"
                 >
-                    Designing Seamless Digital Experiences: From Concept to Interactive Interfaces
+                    Designing Seamless Digital Experiences from Concept to Interface
                 </motion.h1>
 
                 <motion.p
