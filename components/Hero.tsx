@@ -27,7 +27,7 @@ export default function Hero() {
                 variants={containerVariants}
                 initial="hidden"
                 animate="visible"
-                className="text-center px-4 max-w-3xl"
+                className="text-center px-6 max-w-2xl"
             >
                 <motion.p
                     variants={itemVariants}
@@ -38,7 +38,7 @@ export default function Hero() {
 
                 <motion.h1
                     variants={itemVariants}
-                    className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-400"
+                    className="text-5xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-400"
                 >
                     Designing Seamless Digital Experiences from Concept to Interface
                 </motion.h1>

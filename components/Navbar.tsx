@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <nav className="fixed top-0 w-full z-50 bg-white/80 dark:bg-black/80 backdrop-blur-md border-b border-zinc-200 dark:border-zinc-800">
-            <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
                 {/* Logo */}
                 <motion.span
                     initial={{ opacity: 0, x: -20 }}
