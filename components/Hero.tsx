@@ -40,15 +40,14 @@ export default function Hero() {
                     variants={itemVariants}
                     className="text-5xl md:text-7xl font-bold tracking-tight mb-6 bg-clip-text text-transparent bg-gradient-to-b from-zinc-900 to-zinc-600 dark:from-white dark:to-zinc-400"
                 >
-                    Building the Future of Hardware & Web
+                    Designing Seamless Digital Experiences: From Concept to Interactive Interfaces
                 </motion.h1>
 
                 <motion.p
                     variants={itemVariants}
                     className="text-lg text-zinc-600 dark:text-zinc-400 mb-10 leading-relaxed"
                 >
-                    Specializing in embedded systems, IoT architecture, and high-performance
-                    full-stack applications.
+                    I craft responsive, user-centered frontends with modern frameworks, delivering fast, accessible, and visually engaging web applications.
                 </motion.p>
 
                 <motion.div variants={itemVariants} className="flex gap-4 justify-center">
